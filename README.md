@@ -2,13 +2,15 @@
 
 An script which reads a valid FA as JSON from standard input and print the minimized FA to the output.
 
-**Note**: This script has written for an asignment of my "Introduction of Theory of Computation" course in university
-
 ## Algorithm
 
-I implemented the algorithm which provided in 2.6 section of [Introduction to Languages and the Theory of Computation 4th edition](https://www.amazon.com/Introduction-Languages-Theory-Computation-Martin/dp/0073191469)" by John C. Martin
+I implemented the algorithm that is provided in 2.6 section of "[Introduction to Languages and the Theory of Computation 4th edition](https://www.amazon.com/Introduction-Languages-Theory-Computation-Martin/dp/0073191469)"
 
-## Structure of the Input and Output JSON
+## Motivation
+
+This script has written for an asignment of my "Introduction of Theory of Computation" course in university
+
+## Structure of the Input and Output JSON file
 
 ```json
 {
@@ -31,7 +33,7 @@ I implemented the algorithm which provided in 2.6 section of [Introduction to La
 
 ### Examples
 
-> **_Important Note:_** This examples are the beautified version of them. script only reads inputs and prints output in one-line! So inputs should be stringify and then pass to script.
+> **_Important Note:_** This examples are the beautified version of them. script only reads inputs and prints output in one-line! So inputs should be stringify and then pass to script. [An example](http://github.com/themasix/fa-minimizer/blob/master/script.01.inp) can be found in the source code and you can use it via [IO Run](https://marketplace.visualstudio.com/items?itemName=hoangnc.io-run) Extenstion in VSCode.
 
 #### Example 1
 
