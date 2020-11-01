@@ -8,7 +8,7 @@ I implemented the algorithm that is provided in 2.6 section of "[Introduction to
 
 ## Motivation
 
-This script has written for an asignment of my "Introduction of Theory of Computation" course in university
+This script has written for an asignment of my "Introduction to Theory of Computation" course by [Dr. Rasoul Ramezanian](https://www.linkedin.com/in/rasoul-ramezanian-455905132/) at [Ferdowsi University of Mashahd](https://en.um.ac.ir)
 
 ## Structure of the Input and Output JSON file
 
