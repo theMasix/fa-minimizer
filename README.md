@@ -33,7 +33,7 @@ This script has written for an asignment of my "Introduction of Theory of Comput
 
 ### Examples
 
-> **_Important Note:_** This examples are the beautified version of them. script only reads inputs and prints output in one-line! So inputs should be stringify and then pass to script. [An example](http://github.com/themasix/fa-minimizer/blob/master/script.01.inp) can be found in the source code and you can use it via [IO Run](https://marketplace.visualstudio.com/items?itemName=hoangnc.io-run) Extenstion in VSCode.
+> **_Important Note:_** This examples are the beautified version of them. script only reads inputs and prints output in one-line! So inputs should be stringify and then pass to script. [An example](https://github.com/theMasix/fa-minimizer/blob/main/src/script.01.inp) can be found in the source code and you can use it via [IO Run](https://marketplace.visualstudio.com/items?itemName=hoangnc.io-run) Extenstion in VSCode.
 
 #### Example 1
 
