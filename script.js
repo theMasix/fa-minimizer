@@ -5,11 +5,19 @@ const rl = readline.createInterface({
   terminal: false,
 });
 
+// Declare and initialize some vars
+
+// the automaton we get from input
 let automaton;
+// Our final minimum-state automation (minimized version)
 let MSAutomation = {};
+// Our SM object (dictionary)
+// Keys are`Qi,Qj` pair of nodes and values are alwayes true
 let SM = {};
+// groups of node which will be created from SM
 let nodeGroups = [];
 
+// wrapper of our utility functions
 const utils = {};
 
 // tells if an unordered pair of nodes are in SM or not
@@ -40,8 +48,8 @@ utils.addNodeToGroup = (index, nodeName) => {
   nodeGroups[index].push(nodeName);
 };
 
-// create SM completely
-utils.createSet = () => {
+// Algorithm can be found in Page 75 of Martin Book
+utils.createSM = () => {
   // Add basis of the recurstion to the SM
   Object.entries(automaton).map((entry1) => {
     Object.entries(automaton).map((entry2) => {
@@ -89,10 +97,10 @@ utils.createSet = () => {
     });
   }
 
-  // Now our SM is complete!
+  // Now our SM dictionary is complete!
 };
 
-// Algorithm is in Page 75
+// Algorithm can be found in Page 75 of Martin Book
 utils.createNodeGroups = () => {
   // Make name of nodes based on their count
   const nodeCount = Object.keys(automaton).length;
@@ -117,7 +125,7 @@ utils.createNodeGroups = () => {
 
 utils.getNewNodeName = (nodeName) => {
   const groupIndex = utils.findNodeInGroups(nodeName);
-  return nodeGroups[groupIndex].reduce((name, aNode, index) => {
+  return nodeGroups[groupIndex].reduce((name, aNode) => {
     return `${name}${aNode}`;
   });
 };
@@ -150,8 +158,8 @@ utils.run = (line) => {
   // Parse JSON so we can read it
   automaton = JSON.parse(line);
 
-  // Create SM
-  utils.createSet();
+  // Create SM object completely
+  utils.createSM();
 
   // Create Node Groups based on created SM
   utils.createNodeGroups();
@@ -159,7 +167,7 @@ utils.run = (line) => {
   // Create new Finite Automaton based on created node groupd
   utils.createNewFA();
 
-  // Hooray! we now have minimum-state automata. Print it!
+  // Hooray! we now have minimum-state automaton. Print it!
   console.log(JSON.stringify(MSAutomation));
 };
 
