@@ -1,0 +1,1 @@
+{"q0":{"acceptance":false,"adjacency":{"a":"q1q2q5","b":"q9"}},"q1q2q5":{"acceptance":false,"adjacency":{"a":"q3q4q8","b":"q1q2q5"}},"q3q4q8":{"acceptance":true,"adjacency":{"a":"q1q2q5","b":"q3q4q8"}},"q6q7":{"acceptance":false,"adjacency":{"a":"q6q7","b":"q1q2q5"}},"q9":{"acceptance":true,"adjacency":{"a":"q6q7","b":"q3q4q8"}}}
